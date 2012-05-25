@@ -1,5 +1,5 @@
 body{
-	background-color: red;
+	background-color: #eeeeee;
 }
 .wrapper{
 	width: 900px;
@@ -9,7 +9,8 @@ body{
 }
 
 .wrapper1{
-	font-size: 45px;
-	background-color: blue;
+	font-size: 90px;
+	font-family: ;
+	background-color: #0033FF;
 	margin: 0 auto;
 }
