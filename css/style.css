@@ -9,8 +9,13 @@ body{
 }
 
 .wrapper1{
-	font-size: 90px;
-	font-family: ;
+	font-size: 200px;
 	background-color: #0033FF;
 	margin: 0 auto;
+}
+
+.wrapperform{
+	width: 50px;
+	font-size: 20px;
+	height: 10px;
 }

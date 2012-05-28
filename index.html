@@ -1,19 +1,94 @@
 <html>
 	<head>
 		<title>Call Me Noah!</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-	</head>
+			</head>
 
-	<body>
-		<div class="wrapper">
-			<div class="wrapper1"
-				<h1><center>Noah Hopton</center></h1>
-			</div>
+	<body>	
+	
+		<button> Home 		</button>
+		
+		<div class="wrapper"><Center>
+				<div class="wrapper1"
+					<h1><center>Noah Hopton </center></h1>
+				</div>
 			<h2>Location: San Francisco, CA</h2>
 			<h3>Phone: 415-250-2063</h3>
-			<h4>Email: noahhopton@gmail.com </h4>
+			<h4>Email: noahhopton@gmail.com 
+				<button>Email</button> 
+			</h4>
 			<img src="images/Noahface.png" alt="Big Boat" />
 		</div>
+		
+		<div class="wrapper2">
+			<h1><center> Photos from my DC trip!</center></h1>
+		<center></div>
+		
+		<SCRIPT LANGUAGE="JavaScript">
+		
+		var num=1
+		img1 = new Image ()
+			img1.src = "images/slide1.jpg"
+		img2 = new Image ()
+			img2.src = "images/slide2.jpg"
+		img3 = new Image ()
+			img3.src = "images/slide3.jpg"
+		img4 = new Image ()
+			img4.src = "images/slide4.jpg" 
+		img5 = new Image ()
+			img5.src = "images/slide5.jpg" 
+		img6 = new Image ()
+			img6.src = "images/slide6.jpg" 
+		img7 = new Image ()
+			img7.src = "images/slide7.jpg"
+		img8 = new Image ()
+			img8.src = "images/slide8.jpg" 
+	 
+		
+		text1 = "The girls at Local 16"
+		text2 = "Max and I at Local 16"
+		text3 = "What remains of Bethleham Steel"
+		text4 = "Trying to be artsie"
+		text5 = "Natural Framing"
+		text6 = "How often do you get to walk on train tracks" 
+		text7 = "The Fountain"
+		text8 = "haha"
+	
+		
+		function slideshowUp()
+		{
+		num=num+1
+		if (num==9)
+		{num=1}
+		document.mypic.src=eval("img"+num+".src")
+		document.joe.burns.value=eval("text"+num)
+		}
+		
+		function slideshowBack()
+		{
+		num=num-1
+		if (num==0)
+		{num=8}
+		document.mypic.src=eval("img"+num+".src")
+		document.joe.burns.value=eval("text"+num)
+		}
+		
+		</SCRIPT>
+		
+		<!-- The Image and Form Codes are Below --> 
+		
+		<CENTER>
+		<IMG SRC="images/slide1.jpg" NAME="mypic" BORDER=10 HEIGHT="816" WIDTH="488">
+		<p>
+		
+			<FORM NAME="joe">
+				<INPUT TYPE="text" SIZE="50" NAME="burns" VALUE="The girls at Local 16">
+			</FORM>
+			
+		<A HREF="JavaScript:slideshowBack()"> Back</A>
+		
+		<A HREF="JavaScript:slideshowUp()"> Next</A> 
+		
+
 	</body>
 
 </html>
